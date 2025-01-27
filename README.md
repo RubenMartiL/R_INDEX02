@@ -21,4 +21,4 @@ You can get started with this template by simply copying the code into your HTML
 
 ## Tailwind Setup
 
-This project uses **Tailwind CSS** via a CDN. The following code is included in the `<head>` section of the HTML file to import the Tailwind CSS:
+This project uses **Tailwind CSS** via a CDN.
