@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">     
+        @theme {
+            --color-primary: rgb(126,147,255);
+            --font-sans: "Poppins", serif;
+        }    
+    </style>
+  </head>
+  <body>
+    <div class="flex min-h-full">
+      <div class="bg-primary h-screen flex flex-1 flex-col justify-center items-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div class="mx-auto w-full max-w-sm lg:w-96">
+          <div class="w-full flex justify-center">
+            <img class='w-1/5' src="./logo_white.png"/>
+          </div>
+          <div class="mt-32 animate-shake">
+            <div>
+              <form action="#" method="POST">
+                <div class="flex flex-col gap-2">
+                    <div class="flex flex-col relative">
+                        <input id="name" placeholder='Username' name="name" type="text" class="bg-white border border-primary px-4 py-2.5 rounded text-gray-400 font-sans focus:outline-none focus:ring-0 placeholder:text-sm text-ellipsis w-full"/>
+                    </div>
+                    <div class="flex flex-col relative">
+                        <input id="pass" placeholder='Password' name="pass" type="password" class="bg-white border border-primary px-4 py-2.5 rounded text-gray-400 font-sans focus:outline-none focus:ring-0 placeholder:text-sm text-ellipsis w-full"/>
+                    </div>
+                <div class="mt-5">
+                    <button type="submit" class="cursor-pointer flex w-full justify-center bg-indigo-600 rounded-lg p-3 font-semibold text-white">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative w-full h-screen">
+            <img
+            class="absolute inset-0 h-full w-full object-cover"
+            src="./login.jpg"
+            alt=""
+            />
+        </div>
+  </body>
+</html>
